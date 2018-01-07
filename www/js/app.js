@@ -22,3 +22,84 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.config(function ($stateProvider, $urlRouterProvider) {
+  $stateProvider
+    .state('tabs', {
+      url: '/tabs',
+      abstract: true,
+      templateUrl: 'views/tabs/tabs.html'
+    })
+    .state('tabs.home', {
+      url: '/home',
+      views: {
+        'home-tab': {
+          templateUrl: 'views/home/home.html'
+        }
+      }
+    })
+    .state('tabs.resep', {
+      url: '/resep',
+      views: {
+        'resep-tab': {
+          templateUrl: 'views/resep/resep.html'
+        }
+      }
+    })
+
+     .state('tabs.special', {
+      url: '/special',
+      views: {
+        'resep-tab': {
+          templateUrl: 'views/resep/special.html'
+        }
+      }
+    })
+
+     .state('tabs.hitory', {
+      url: '/hitory',
+      views: {
+        'resep-tab': {
+          templateUrl: 'views/resep/history.html'
+        }
+      }
+    })
+
+    .state('tabs.why', {
+     url: '/why',
+     views: {
+       'resep-tab': {
+         templateUrl: 'views/resep/why.html'
+       }
+     }
+   })
+
+     .state('tabs.install', {
+      url: '/install',
+      views: {
+        'resep-tab': {
+          templateUrl: 'views/resep/install.html'
+        }
+      }
+    })
+
+    .state('tabs.user', {
+     url: '/user',
+     views: {
+       'resep-tab': {
+         templateUrl: 'views/resep/user.html'
+       }
+     }
+   })
+
+    .state('tabs.about', {
+      url: '/about',
+      views: {
+        'about-tab': {
+          templateUrl: 'views/about/about.html'
+        }
+      }
+    });
+
+  $urlRouterProvider.otherwise('/tabs/home');
+})

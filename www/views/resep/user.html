@@ -1,0 +1,52 @@
+<ion-view view-title="User Interface">
+  <ion-content class="padding">
+
+  	<h4 style="text-align: center;">
+      <h2>1. Overclocking software</h2>
+      <img src="img/1.jpg" alt="">
+      <p>The first step whenever you want to do anything to your PC is to make sure it’s completely up to date. That ought to either flag up any gremlins lurking in your system or help get rid of them before they become an issue. Check Windows Update to get your OS up to date and ensure you have the latest drivers for your graphics card, whether it's an AMD or Nvidia GPU.</p>
+
+      <p>Next, you’ll want to grab your overclocking software. My personal choice for perking up your graphics card is MSI’s Afterburner software, and its latest release now includes monitoring for DirectX 12 titles too. It uses the classic Rivatuner backend (like Asus’ GPU Tweak and EVGA’s Precision apps), but comes with an easy-to-use interface and a handy on-screen display to keep track of things in-game. It’s a free download, takes only a few minutes to install, and can be used on any GPU, not just those from MSI.</p>
+
+      <p>As well as the software for enacting any overclock you want to achieve you should get yourself some benchmarking applications too. Have a look in your Steam library, you may find some of the games you already own have built-in benchmarks – I mean, everyone’s got a copy of GTA V, right? But, while games are great for giving you a tangible before and after shot of your PC’s performance, they’re a bit awkward to use when you’re trying to find the limits of your hardware.</p>
+
+      <p>I suggest downloading the Unigine Heaven benchmark. It’s a GPU-intensive 3D rendering test which will stress your card with a continuous loop you can run in a window on your desktop. And it looks kinda purty too...</p>
+
+      <h2>2. Benchmark baseline performance</h2>
+      <img src="img/2.jpg" alt="">
+      <p>In order to actually understand what you've achieved through your overclocking efforts, you need to get some baseline performance numbers for how your rig currently performs. Benchmarking is a rather dry, tedious process (welcome to my world), but it will allow you to feel all warm and fuzzy after you’ve nailed down your extra GPU performance, because you can see in black and white what all that overclocking effort has afforded you.</p>
+
+      <p>Grab one of your favourite games with a built-in benchmark – we use the likes of GTA V, the Total War games, Shadow of Mordor, Hitman, and the latest Tomb Raider – and then run the test (usually found in the graphics options) at your current settings, noting down the final average and minimum frame rate scores. It’s also worth benchmarking the Heaven test at your monitor’s native resolution too (hit F9 and sit back). You could also download the free version of 3DMark and run the basic FireStrike test to get a reliable index score.</p>
+
+      <h2>3. Fun with frequencies</h2>
+      <img src="img/3.jpg" alt="">
+      <p>I can’t stress this enough – be patient. That’s the key to getting the most out of your GPU with the sort of basic overclocking we’re looking at here. You’re very unlikely to do any damage to your graphics card while you’re testing its limits, but if you go in heavy-handed, pushing the clocks up as high as the sliders allow, the minimal risks are definitely increased. </p>
+      <p>First, boot up Afterburner and make sure the little Windows logo isn’t lit up – clicking that button ensures the current boosted settings are applied when the system boots up. You don’t want that happening when you’re trying to find the limits, only when you’re sure the system is stable.</p>
+      <p>Next, boot up Heaven in a window, one that’s small enough so you can view and access the Afterburner control panel while Heaven is looping through its floating medieval village scenery. On a native 1080p screen, run it at 1280 x 720, and then, with a 1440p or 4K panel, run the test at 1920 x 1080.</p>
+      <p>Now you’re ready to start tweaking and the best place to start is with the memory clocks. Start shifting the memory slider to the right in 5-10MHz increments, hitting the tick button to apply the boost each time. After each step, check the looping Heaven run for visual artifacts appearing on-screen. Memory glitches will manifest themselves as either solid blocks, blobs of colours, or pin-sharp stars. Keep pushing the memory slider up in small increments until you start to see those telltale signs of failing memory... or until the card or system crashes.</p>
+
+      <h2>4. GPU overclocking</h2>
+      <img src="img/4.jpg" alt="">
+      <p>This is where the real performance-changing stuff goes down and also where you’re going to start generating the most heat. Before you start upping the GPU clockspeed itself push the power limit slider up to max – allowing the graphics card to deliver more power to the silicon if it can – and also push up the temperature limit a little higher to account for the increased heat generation.</p>
+      <p>Using the same process we used when overclocking the video memory, push the GPU clockspeed up by 5-10MHz increments, checking the game window for artifacts as you apply each step change. </p>
+      <p>Processor artifacts manifest themselves in different ways to memory issues. Keep an eye out for pixel-sized dots of different colours appearing around the screen, random shards of colour or bright, and coloured full-screen flashes. As soon as you see anything like that it’s time to dial back the GPU clockspeed in the same way as you did with the memory to find the stable boosted clockspeed.</p>
+
+      <h2>5. Test and test again</h2>
+      <img src="img/5jpg" alt="">
+      <p>Close down Heaven in windowed form and restart it fullscreen at your native resolution and leave it looping for a good ten minutes to make sure it remains fully stable at your new clocks. When you are positive it is stable, hit F9 to benchmark, and see what performance increase your efforts have afforded you. Now replicate your earlier gaming and 3DMark tests to see what else you’ve gained.</p>
+      <p>Finally, hit that little Windows logo on Afterburner and light it up so that every time you boot you’re running at your newly discovered, overclocked settings.</p>
+
+      <h2>6. AMD WattMan</h2>
+      <img src="img/6.jpg" alt="">
+      <p>Using Afterburner, or other Rivatuner-based applications, isn’t the only option. With AMD Radeon cards you can simply use the new WattMan tool which now comes as part of the Radeon Settings driver software.</p>
+      <p>It's a dedicated option for modern AMD cards and allows you to do per-application overclocking for individual games. Below the latest 400-series cards you won't have full access to everything that WattMan can offer (thanks to Danteska for pointing that out), though you will still be able to play with some sliders.</p>
+      <p>The overclocking process is similar to that which I detailed earlier – patiently pushing up clockspeeds while checking Heaven in a window – but there are a few, slightly different steps. First you need to raise the minimum and target fan speeds, then switch from auto to manual and increase the temperature targets. Again, though, you will need to push the power limit to maximum before you tweak the clocks.</p>
+      <p>For the memory, you need to raise ‘State 1’ in small increments and hit apply to check stability while the GPU slider needs to be raised in 0.5% steps instead of the 5-10MHz jumps we used in Afterburner.</p>
+
+    </h4>
+  	<div style="text-align: center">
+  		<!-- <img src="img/overclock.png" /> -->
+  	</div>
+
+  </ion-content>
+</ion-view>
